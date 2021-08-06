@@ -1,0 +1,29 @@
+package com.company;
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+//Problem  -- Check char is alphabet or not
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter a character");
+        char chr = sc2.next().charAt(0);
+        //First Method
+        if (chr >= 'a' && chr <= 'z' || (chr >= 'A' && chr <= 'Z')){
+            System.out.println(chr + "is Character");
+        }
+        else {
+            System.out.println(chr +"is not Character");
+        }
+        //Second Method
+        if (Character.isAlphabetic(chr)){
+            System.out.println(chr +"is alphabet");
+        }
+        else {
+            System.out.println(chr +"is not Alphabet");
+       }
+       }
+       }
+       
